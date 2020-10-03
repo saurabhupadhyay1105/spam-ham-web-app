@@ -4,16 +4,14 @@
 {% block content %}
 
     <br>
-    <h1 style="color:white">SpamHam Spam Hammmm......</h1>
-    <div class="jumbotron" style="padding-top: 10px">
-        <h2>What is SpamHam, what does it do?</h2>
+    <h1 style="color:white">SpamHam Spam Burster......</h1>
+    <div class="jumbotron xs-4" style="padding-top: 10px;box-shadow: 4px 4px 4px 4px black;" >
+        <h2>What is Spam-Burster, what does it do?</h2>
         <div><p>Unsolicited messages which we did not ask for from a source is what we call <b><a
                 href="https://blog.barracuda.com/2013/10/03/ham-v-spam-whats-the-difference/">SPAM</a></b>.<br> Messages
             which are the desired ones and are not spam are known as <b><a
                     href="https://blog.barracuda.com/2013/10/03/ham-v-spam-whats-the-difference/">HAM</a></b>.
-            <br> Wait! Don't go away, I got an example of a spam. Yes the one below! <br> <em
-                    style="color:rebeccapurple">A [redacted] loan for Rs 100K is approved for you if you receive this
-                SMS. 1 min verification & cash in 1 hr at www.[redacted].co.in to opt out reply stop</em></p>
+
             <p>This web app is powered with ML, NLP which identifies whether the message is a spam or not.</p>
             <p><b>Write or paste a message/email in the text box below to find out is it a spam or not?</b></p></div>
         <form method="post">
@@ -30,12 +28,12 @@
 
     <br><br>
     <div id="scroll">
-        <p> Result-</p>
+        <p style="font-size:20px;font-weight:bold;letter-spacing:2px;"> RESULT-</p>
         {% if result %}
             {#    <script> gotoBottom("result") </script>#}
 
 
-            <div class="jumbotron" style="padding-top: 10px" id="result">
+            <div class="jumbotron" style="padding-top: 10px;box-shadow: 4px 4px 4px 4px black;" id="result">
                 <script>scrollDown();</script>
 
                 <div> You entered <br> "{{ message }}" <br></div>
@@ -60,5 +58,15 @@
 
     {#    <script>scrollDown();</script>#}
 
+<div class="jumbotron sm-4" style="padding-top: 10px;box-shadow: 4px 4px 4px 4px black;width: 84%;
+    margin-left: 108px;" >
 
+
+                <div> Submitted By-Spam-Buster Team <br>
+                    <br><br>
+                    Saumya Chauhan (18245) <br>Saurabh Upadhyay(18246) <br>Shailja (18247) <br>
+                Shilpi Gupta (18248) <br>
+                </div>
+
+            </div>
 {% endblock %}
